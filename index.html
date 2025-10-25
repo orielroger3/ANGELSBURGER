@@ -1,0 +1,231 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Burgers</title>
+  <link rel="icon" href="images/logo.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="images/logo.jpg" alt="Burger Logo" class="logo">
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#feedbacks">Feedbacks</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME / HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Big Bite. Local Heart.</h1>
+          <p>Handcrafted burgers with classic Filipino warmth — juicy, cheesy, and made with heart.</p>
+          <a href="#menu" class="btn">View Menu</a>
+        </div>
+        <div class="hero-art">
+          <img src="images/burger.jpg" alt="Delicious burger" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Angel's Burger</h2>
+        <p class="lead">Karinderya started as a small family table where simple, delicious burgers brought people together. We combine classic techniques with bold flavors so every bite tastes familiar yet exciting.</p>
+        <div class="about-grid">
+          <div class="card">
+            <h3>Our Ingredients</h3>
+            <p>We source fresh produce and use high-quality beef blends. Cheese is melted to perfection, and buns are toasted for that ideal texture.</p>
+          </div>
+          <div class="card">
+            <h3>Our Values</h3>
+            <p>Affordable comfort food, fast friendly service, and food that feels like home.</p>
+          </div>
+          <div class="card">
+            <h3>Community</h3>
+            <p>We support local suppliers and welcome everyone — students, families, and late-night burger lovers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section menu">
+      <div class="container">
+        <h2>Menu</h2>
+        <p class="lead">Our burger selection — from classic to indulgent. Click any item to see description.</p>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <img src="images/burger.jpg" alt="Classic Burger">
+            <h4>Classic Burger</h4>
+            <p class="price">₱99</p>
+            <p>Juicy patty, fresh lettuce, tomato, pickles, and our signature sauce.</p>
+          </article>
+
+          <article class="menu-item">
+            <img src="images/doubleburger.jpg" alt="Double Cheese Burger">
+            <h4>Double Cheese</h4>
+            <p class="price">₱149</p>
+            <p>Two beef patties and double melted cheese for the extra-hungry.</p>
+          </article>
+
+          <article class="menu-item">
+            <img src="images/baconsupreme.jpg" alt="Bacon Supreme">
+            <h4>Bacon Supreme</h4>
+            <p class="price">₱169</p>
+            <p>Smoky bacon, crisp onions, cheddar, and BBQ drizzle.</p>
+          </article>
+
+          <article class="menu-item">
+            <img src="images/veggiedelight.jpg" alt="Veggie Delight">
+            <h4>Veggie Delight</h4>
+            <p class="price">₱129</p>
+            <p>Grilled patty made from house-seasoned veggies and grains, topped with avocado.</p>
+          </article>
+
+          <article class="menu-item">
+            <img src="images/spicyjalapeno.jpg" alt="Spicy Jalapeño">
+            <h4>Spicy Jalapeño</h4>
+            <p class="price">₱139</p>
+            <p>For those who want some kick — jalapeños, pepper jack, and spicy aioli.</p>
+          </article>
+
+          <article class="menu-item combo">
+            <img src="images/menucombo.jpg" alt="Combo Meal">
+            <h4>Combo Meal</h4>
+            <p class="price">₱199</p>
+            <p>Burger + fries + drink. Best value for a hearty meal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEEDBACKS -->
+    <section id="feedbacks" class="section feedbacks">
+      <div class="container">
+        <h2>Feedbacks</h2>
+        <p class="lead">We love hearing from you. Share your experience!</p>
+
+        <div class="feedback-layout">
+          <form id="feedback-form" class="feedback-form">
+            <input type="text" id="fb-name" placeholder="Your name" required>
+            <select id="fb-rating">
+            </select>
+            <textarea id="fb-comment" rows="4" placeholder="Tell us what you think" required></textarea>
+            <button type="submit" class="btn">Send Feedback</button>
+          </form>
+
+          <div class="feedback-list" id="feedback-list">
+            <!-- sample static feedbacks -->
+            <div class="fb-item">
+              <h4>Maria <span class="rating"></span></h4>
+              <p>Love the Double Cheese — very filling and tasty!</p>
+            </div>
+            <div class="fb-item">
+              <h4>Jo <span class="rating"></span></h4>
+              <p>Fast service and warm buns. Will come back!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact & Location</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Get in touch</h3>
+            <p>Phone: <a href="tel:+639171234567">+63 917-123-4567</a></p>
+            <p>Email: <a href="mailto:hello@karinderya.com">hello@angelsburger.com</a></p>
+            <p>Hours: Mon–Sun / 8:00 AM – 10:00 PM</p>
+
+            <form id="contact-form" class="contact-form">
+              <input type="text" id="ct-name" placeholder="Your name" required>
+              <input type="email" id="ct-email" placeholder="Your email" required>
+              <textarea id="ct-message" rows="4" placeholder="Your message" required></textarea>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+
+          <div class="map-card">
+            <h3>Our Store</h3>
+            <div class="map-placeholder"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61748.31105930972!2d121.0215102216797!3d14.697349000000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b999e472ed77%3A0x7dc42b011bbfdfb!2sAngel&#39;s%20Burger!5e0!3m2!1sen!2sph!4v1761315002420!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <p class="small"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Roger's Burger — All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple JS: toggle nav and handle forms locally -->
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    navToggle && navToggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    });
+
+    // Update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Feedback form (client-only demo)
+    const feedbackForm = document.getElementById('feedback-form');
+    const feedbackList = document.getElementById('feedback-list');
+    feedbackForm && feedbackForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('fb-name').value.trim();
+      const rating = document.getElementById('fb-rating').value;
+      const comment = document.getElementById('fb-comment').value.trim();
+      if(!name || !comment) return;
+      const div = document.createElement('div');
+      div.className = 'fb-item';
+      div.innerHTML = `<h4>${name} <span class="rating">${'⭐'.repeat(rating)}</span></h4><p>${comment}</p>`;
+      feedbackList.prepend(div);
+      feedbackForm.reset();
+    });
+
+    // Contact form (client-only demo)
+    const contactForm = document.getElementById('contact-form');
+    contactForm && contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Message sent — this demo does not actually send email.');
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>
+
+
